@@ -1,0 +1,32 @@
+{
+  "id": "ea44ff69-a819-4424-8d5b-5d80df7b83ce",
+  "name": "FirmaBiometrica_TFG",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "25.4.29661.29959",
+  "idRanges": [
+      {
+          "from": 70100,
+          "to": 70149
+      }
+  ],
+  "resourceExposurePolicy": {
+      "allowDebugging": true,
+      "allowDownloadingSource": true,
+      "includeSourceInSymbolFile": true
+  },
+  "runtime": "14.0",
+  "features": [
+      "NoImplicitWith"
+  ]
+}
