@@ -1,4 +1,4 @@
-codeunit 70113 ABCTShipmentSignatureHelper
+codeunit 90143 ABCTShipmentSignatureHelper
 {
     Permissions = tabledata "Sales Shipment Header" = M;
 
@@ -8,7 +8,7 @@ codeunit 70113 ABCTShipmentSignatureHelper
         FieldId_ABCTShipmentSignature: Integer;
 
     begin
-        FieldId_ABCTShipmentSignature := 70103;
+        FieldId_ABCTShipmentSignature := 90103;
         RecRef.GetTable(SalesShipmentHeader);
         TempBlob.ToRecordRef(RecRef, FieldId_ABCTShipmentSignature);
         //RecRef.SetTable(SalesShipmentHeader);

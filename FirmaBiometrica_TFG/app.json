@@ -16,8 +16,8 @@
   "application": "25.4.29661.29959",
   "idRanges": [
       {
-          "from": 70100,
-          "to": 70149
+          "from": 90100,
+          "to": 90149
       }
   ],
   "resourceExposurePolicy": {
@@ -27,6 +27,7 @@
   },
   "runtime": "14.0",
   "features": [
-      "NoImplicitWith"
+      "NoImplicitWith",
+      "TranslationFile"
   ]
 }

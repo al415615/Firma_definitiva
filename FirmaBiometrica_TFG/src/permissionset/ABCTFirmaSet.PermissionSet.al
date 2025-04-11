@@ -1,4 +1,4 @@
-permissionset 70100 ABCTFirma
+permissionset 90100 ABCTFirmaSet
 {
     Assignable = true;
     Permissions = tabledata "Sales Shipment Header" = RMID,

@@ -5,15 +5,18 @@
             "name": "Microsoft cloud sandbox",
             "request": "launch",
             "type": "al",
-            "environmentType": "Sandbox",
-            "environmentName": "Nuubbe",
+            "environmentType": "OnPrem",
+            "server": "http://bc25es",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "tenant": "3668c22d-e2c2-4fc8-9a87-dbf367afb3ce",
+            "tenant": "default",
+            "usePublicURLFromServer": true,
             "schemaUpdateMode": "ForceSync"
         }
     ]

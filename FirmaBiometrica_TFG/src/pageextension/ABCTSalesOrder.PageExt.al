@@ -2,7 +2,7 @@ namespace DefaultPublisher.ALProject1;
 using Microsoft.Sales.Document;
 using System.Utilities;
 
-pageextension 70103 ABCTSalesOrder extends "Sales Order"
+pageextension 90103 ABCTSalesOrder extends "Sales Order"
 {
     layout
     {

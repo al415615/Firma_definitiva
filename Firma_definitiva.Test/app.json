@@ -12,29 +12,42 @@
   "logo": "",
   "dependencies": [
     {
-      "publisher": "Microsoft",
-      "name": "Library Assert",
-      "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
-      "version": "22.0.0.0"
+      "publisher": "Default publisher",
+      "name": "FirmaBiometrica_TFG",
+      "id": "ea44ff69-a819-4424-8d5b-5d80df7b83ce",
+      "version": "1.0.0.0"
     },
     {
+      "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+      "publisher": "Microsoft",
+      "name": "Library Assert",
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
       "publisher": "Microsoft",
       "name": "Any",
-      "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
-      "version": "22.0.0.0"
-    }
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
+      "publisher": "Microsoft",
+      "name": "Test Runner",
+      "version": "16.0.0.0"
+    }      
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "22.0.0.0",
+  "application": "25.4.29661.29959",
   "idRanges": [
     {
-      "from": 70100,
-      "to": 70149
+      "from": 90100,
+      "to": 90149
     }
   ],
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+      "TranslationFile"
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,

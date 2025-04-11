@@ -1,4 +1,4 @@
-page 70104 ABCTSalesShipmentLineAPI
+page 90104 ABCTSalesShipmentLineAPI
 {
     PageType = API;
     Caption = 'Sales Shipment Line API';

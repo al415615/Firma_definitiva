@@ -8,11 +8,11 @@ using System.IO;
 using System.Environment;
 
 
-tableextension 70100 ABCTSalesHeader extends "Sales Header"
+tableextension 90100 ABCTSalesHeader extends "Sales Header"
 {
     fields
     {
-        field(70101; ABCTSalesEmail; Text[100])
+        field(90101; ABCTSalesEmail; Text[100])
         {
             Caption = 'Sales Email', Comment = 'Email del cliente';
             Tooltip = 'Specifies the sales contact email address.', Comment = 'Especifica el email de contacto del cliente';
@@ -21,7 +21,7 @@ tableextension 70100 ABCTSalesHeader extends "Sales Header"
         }
 
 
-        field(70102; ABCTSalesSignature; BLOB)
+        field(90102; ABCTSalesSignature; BLOB)
         {
             Caption = 'Customer Signature', Comment = 'Firma del cliente';
             Tooltip = 'Specifies the customer’s signature as an image.', Comment = 'Especifica la firma del cliente';
@@ -29,7 +29,7 @@ tableextension 70100 ABCTSalesHeader extends "Sales Header"
             DataClassification = CustomerContent;
 
         }
-        field(70104; ABCTCustomerImage; Media)
+        field(90104; ABCTCustomerImage; Media)
         {
             Caption = 'Customer Image', Comment = 'Foto de perfil del cliente';
             Tooltip = 'Specifies the customer’s image.', Comment = 'Especifica la foto de perfil del cliente';

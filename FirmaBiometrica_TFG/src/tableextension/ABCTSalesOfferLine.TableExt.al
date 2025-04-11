@@ -10,12 +10,12 @@ using Microsoft.Sales.Customer;
 using System.Environment;
 
 
-tableextension 70103 ABCTSalesOfferLine extends "Sales Line"
+tableextension 90103 ABCTSalesOfferLine extends "Sales Line"
 {
     fields
     {
 
-        field(70105; ABCTItemImage; Guid)
+        field(90105; ABCTItemImage; Guid)
         {
             Caption = 'Item Image', Comment = 'Imagen del artículo';
             Tooltip = 'Specifies the item’s image.', Comment = 'Especifica la imagen del artículo';

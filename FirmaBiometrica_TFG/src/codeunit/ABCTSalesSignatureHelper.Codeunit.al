@@ -1,4 +1,4 @@
-codeunit 70110 ABCTSalesSignatureHelper
+codeunit 90140 ABCTSalesSignatureHelper
 {
 
     procedure SetSignatureFromBlob(var SalesHeader: Record "Sales Header"; TempBlob: Codeunit "Temp Blob")
@@ -8,7 +8,7 @@ codeunit 70110 ABCTSalesSignatureHelper
         FieldId_ABCTSalesSignature: Integer;
 
     begin
-        FieldId_ABCTSalesSignature := 70102;
+        FieldId_ABCTSalesSignature := 90102;
         RecRef.GetTable(SalesHeader);
         TempBlob.ToRecordRef(RecRef, FieldId_ABCTSalesSignature);
         RecRef.SetTable(SalesHeader);

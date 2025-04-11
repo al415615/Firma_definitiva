@@ -1,4 +1,4 @@
-reportextension 70111 ABCTSalesShipment extends "Standard Sales - Shipment"
+reportextension 90111 ABCTSalesShipment extends "Standard Sales - Shipment"
 {
 
     dataset

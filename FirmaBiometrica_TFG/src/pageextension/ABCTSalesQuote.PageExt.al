@@ -3,7 +3,7 @@ using Microsoft.Sales.Document;
 using System.IO;
 using System.Utilities;
 
-pageextension 70101 ABCTSalesQuote extends "Sales Quote"
+pageextension 90101 ABCTSalesQuote extends "Sales Quote"
 {
     layout
     {

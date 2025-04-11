@@ -9,11 +9,11 @@ using Microsoft.Sales.Customer;
 using System.Environment;
 
 
-tableextension 70101 ABCTSalesShipmentHeader extends "Sales Shipment Header"
+tableextension 90101 ABCTSalesShipmentHeader extends "Sales Shipment Header"
 {
     fields
     {
-        field(70101; ABCTShipmentEmail; Text[100])
+        field(90101; ABCTShipmentEmail; Text[100])
         {
             Caption = 'Sales Email', Comment = 'Email del cliente';
             Tooltip = 'Specifies the sales contact email address.', Comment = 'Especifica el email de contacto del cliente';
@@ -21,7 +21,7 @@ tableextension 70101 ABCTSalesShipmentHeader extends "Sales Shipment Header"
             DataClassification = CustomerContent;
         }
 
-        field(70103; ABCTShipmentSignature; BLOB)
+        field(90103; ABCTShipmentSignature; BLOB)
         {
             Caption = 'Customer Signature', Comment = 'Firma del cliente';
             Tooltip = 'Specifies the customer’s signature as an image.', Comment = 'Especifica la firma del cliente';
@@ -30,7 +30,7 @@ tableextension 70101 ABCTSalesShipmentHeader extends "Sales Shipment Header"
 
         }
 
-        field(70105; ABCTCustomerImage; Media)
+        field(90105; ABCTCustomerImage; Media)
         {
             Caption = 'Customer Image', Comment = 'Foto de perfil del cliente';
             Tooltip = 'Specifies the customer’s image.', Comment = 'Especifica la foto de perfil del cliente';

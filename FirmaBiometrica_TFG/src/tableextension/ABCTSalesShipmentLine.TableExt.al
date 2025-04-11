@@ -10,12 +10,12 @@ using Microsoft.Sales.Customer;
 using System.Environment;
 
 
-tableextension 70104 ABCTSalesShipmentLine extends "Sales Shipment Line"
+tableextension 90104 ABCTSalesShipmentLine extends "Sales Shipment Line"
 {
     fields
     {
 
-        field(70105; ABCTItemImage; Guid)
+        field(90105; ABCTItemImage; Guid)
         {
             Caption = 'Item Image', Comment = 'Imagen del artículo';
             Tooltip = 'Specifies the item’s image.', Comment = 'Especifica la imagen del artículo';

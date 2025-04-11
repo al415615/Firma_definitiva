@@ -3,7 +3,7 @@ using Microsoft.Sales.Document;
 using Microsoft.Sales.History;
 using System.Utilities;
 
-pageextension 70102 ABCTPostedSalesShipment extends "Posted Sales Shipment"
+pageextension 90102 ABCTPostedSalesShipment extends "Posted Sales Shipment"
 {
 
 

@@ -1,4 +1,4 @@
-reportextension 70110 ABCTSalesOrder extends "Standard Sales - Order Conf."
+reportextension 90110 ABCTSalesOrder extends "Standard Sales - Order Conf."
 {
 
     dataset

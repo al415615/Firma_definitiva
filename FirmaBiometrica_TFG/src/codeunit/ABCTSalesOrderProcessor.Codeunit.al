@@ -1,4 +1,4 @@
-codeunit 70112 ABCTSalesOrderProcessor
+codeunit 90132 ABCTSalesOrderProcessor
 {
     procedure RunCompleteProcess(SalesHeader: Record "Sales Header")
     var

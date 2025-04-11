@@ -1,4 +1,4 @@
-codeunit 70114 ABCTSalesShipmentProcessor
+codeunit 90134 ABCTSalesShipmentProcessor
 {
     Permissions = tabledata "Sales Shipment Header" = RMID,
                 tabledata "Sales Shipment Line" = R;
