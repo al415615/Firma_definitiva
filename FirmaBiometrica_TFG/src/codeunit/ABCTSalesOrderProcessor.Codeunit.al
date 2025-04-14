@@ -5,20 +5,20 @@ codeunit 90132 ABCTSalesOrderProcessor
         // vars
         SalesOrder: Record "Sales Header";
         TempBlob: Codeunit "Temp Blob";
-        Email: Codeunit Email;
-        EmailMessage: Codeunit "Email Message";
-        Base64: Codeunit "Base64 Convert";
+        //Email: Codeunit Email;
+        //EmailMessage: Codeunit "Email Message";
+        //Base64: Codeunit "Base64 Convert";
         //FileManagement: Codeunit "File Management";
         RecRef: RecordRef;
-        InStream: InStream;
+        //InStream: InStream;
         OutStream: OutStream;
-        FileName: Text[250];
-        Subject: Text;
-        Body: Text;
-        //Base64Signature: Text;
-        Base64EncodedPdf: Text;
-        Parameters: Text;
-        FinalParameters: Text;
+    //FileName: Text[250];
+    //Subject: Text;
+    //Body: Text;
+    //Base64Signature: Text;
+    //Base64EncodedPdf: Text;
+    //Parameters: Text;
+    //FinalParameters: Text;
     begin
         // verify that the fields are not empty
         if SalesHeader.ABCTSalesEmail = '' then
@@ -36,10 +36,12 @@ codeunit 90132 ABCTSalesOrderProcessor
         RecRef.GetTable(SalesOrder);
 
         RecRef.Field(SalesHeader.FieldNo("No.")).SetRange(SalesOrder."No.");
-        Parameters := '<?xml version="1.0" standalone="yes"?><ReportParameters name="Standard Sales - Order Conf." id="1305"><Options><Field name="LogInteraction">false</Field><Field name="ArchiveDocument">false</Field></Options><DataItems><DataItem name="Header">VERSION(1) SORTING(Field1,Field3) WHERE(Field1=CONST(%1))</DataItem></DataItems></ReportParameters>';
-        FinalParameters := StrSubstNo(Parameters, SalesOrder."No.");
+        //Parameters := '<?xml version="1.0" standalone="yes"?><ReportParameters name="Standard Sales - Order Conf." id="1305"><Options><Field name="LogInteraction">false</Field><Field name="ArchiveDocument">false</Field></Options><DataItems><DataItem name="Header">VERSION(1) SORTING(Field1,Field3) WHERE(Field1=CONST(%1))</DataItem></DataItems></ReportParameters>';
+        //FinalParameters := StrSubstNo(Parameters, SalesOrder."No.");
 
         TempBlob.CreateOutStream(OutStream);
+
+        /*
         Report.SaveAs(Report::"Standard Sales - Order Conf.", '', ReportFormat::Pdf, OutStream, RecRef);
 
         // compose the email
@@ -60,6 +62,7 @@ codeunit 90132 ABCTSalesOrderProcessor
         FileName := 'SalesOrder_' + SalesOrder."No." + '.pdf';
         EmailMessage.AddAttachment(FileName, 'application/pdf', Base64EncodedPdf);
         Email.Send(EmailMessage, Enum::"Email Scenario"::Default);
+        */
 
         //SalesHeader.Delete(false);
     end;
