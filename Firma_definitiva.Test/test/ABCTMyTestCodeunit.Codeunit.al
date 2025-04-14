@@ -11,12 +11,45 @@ codeunit 90120 ABCTMyTestCodeunit
         SalesOrder: Record "Sales Header";
         MediaRecord: Record "Tenant Media";
         Customer: Record Customer;
+        PaymentTerms: Record "Payment Terms";
+        PaymentMethod: Record "Payment Method";
+        CustPostingGroup: Record "Customer Posting Group";
+        GenBusPostingGroup: Record "Gen. Business Posting Group";
         CustomerNo: Code[20];
+
 
     begin
         // [Given] Setup
+        if not PaymentTerms.Get('C') then begin
+            PaymentTerms.Init();
+            PaymentTerms.Code := 'C';
+            PaymentTerms.Description := 'Contado';
+            PaymentTerms.Insert(true);
+        end;
+
+        if not PaymentMethod.Get('GIRO') then begin
+            PaymentMethod.Init();
+            PaymentMethod.Code := 'GIRO';
+            PaymentMethod.Description := 'Pago por giro';
+            PaymentMethod.Insert(true);
+        end;
+
+        if not CustPostingGroup.Get('NAC') then begin
+            CustPostingGroup.Init();
+            CustPostingGroup.Code := 'NAC';
+            CustPostingGroup.Description := 'Clientes nacionales';
+            CustPostingGroup.Insert(true);
+        end;
+
+        if not GenBusPostingGroup.Get('NAC') then begin
+            GenBusPostingGroup.Init();
+            GenBusPostingGroup.Code := 'NAC';
+            GenBusPostingGroup.Description := 'Clientes nacionales';
+            GenBusPostingGroup.Insert(true);
+        end;
 
         CustomerNo := 'TestCust01';
+
 
         if Customer.Get(CustomerNo) then
             Customer.Delete();
@@ -69,10 +102,42 @@ codeunit 90120 ABCTMyTestCodeunit
         SalesOrder: Record "Sales Header";
         MediaRecord: Record "Tenant Media";
         Customer: Record Customer;
+        PaymentTerms: Record "Payment Terms";
+        PaymentMethod: Record "Payment Method";
+        CustPostingGroup: Record "Customer Posting Group";
+        GenBusPostingGroup: Record "Gen. Business Posting Group";
         CustomerNo: Code[20];
 
     begin
         // [Given] Setup
+
+        if not PaymentTerms.Get('C') then begin
+            PaymentTerms.Init();
+            PaymentTerms.Code := 'C';
+            PaymentTerms.Description := 'Contado';
+            PaymentTerms.Insert(true);
+        end;
+
+        if not PaymentMethod.Get('GIRO') then begin
+            PaymentMethod.Init();
+            PaymentMethod.Code := 'GIRO';
+            PaymentMethod.Description := 'Pago por giro';
+            PaymentMethod.Insert(true);
+        end;
+
+        if not CustPostingGroup.Get('NAC') then begin
+            CustPostingGroup.Init();
+            CustPostingGroup.Code := 'NAC';
+            CustPostingGroup.Description := 'Clientes nacionales';
+            CustPostingGroup.Insert(true);
+        end;
+
+        if not GenBusPostingGroup.Get('NAC') then begin
+            GenBusPostingGroup.Init();
+            GenBusPostingGroup.Code := 'NAC';
+            GenBusPostingGroup.Description := 'Clientes nacionales';
+            GenBusPostingGroup.Insert(true);
+        end;
 
         CustomerNo := 'TestCust01';
 
@@ -123,11 +188,43 @@ codeunit 90120 ABCTMyTestCodeunit
         SalesHeader: Record "Sales Header";
         SalesOrder: Record "Sales Header";
         Customer: Record Customer;
+        PaymentTerms: Record "Payment Terms";
+        PaymentMethod: Record "Payment Method";
+        CustPostingGroup: Record "Customer Posting Group";
+        GenBusPostingGroup: Record "Gen. Business Posting Group";
         OutStr: OutStream;
         CustomerNo: Code[20];
 
     begin
         // [Given] Setup
+
+        if not PaymentTerms.Get('C') then begin
+            PaymentTerms.Init();
+            PaymentTerms.Code := 'C';
+            PaymentTerms.Description := 'Contado';
+            PaymentTerms.Insert(true);
+        end;
+
+        if not PaymentMethod.Get('GIRO') then begin
+            PaymentMethod.Init();
+            PaymentMethod.Code := 'GIRO';
+            PaymentMethod.Description := 'Pago por giro';
+            PaymentMethod.Insert(true);
+        end;
+
+        if not CustPostingGroup.Get('NAC') then begin
+            CustPostingGroup.Init();
+            CustPostingGroup.Code := 'NAC';
+            CustPostingGroup.Description := 'Clientes nacionales';
+            CustPostingGroup.Insert(true);
+        end;
+
+        if not GenBusPostingGroup.Get('NAC') then begin
+            GenBusPostingGroup.Init();
+            GenBusPostingGroup.Code := 'NAC';
+            GenBusPostingGroup.Description := 'Clientes nacionales';
+            GenBusPostingGroup.Insert(true);
+        end;
 
         CustomerNo := 'TestCust01';
 
