@@ -17,8 +17,8 @@ tableextension 90103 ABCTSalesOfferLine extends "Sales Line"
 
         field(90105; ABCTItemImage; Guid)
         {
-            Caption = 'Item Image', Comment = 'Imagen del artículo';
-            Tooltip = 'Specifies the item’s image.', Comment = 'Especifica la imagen del artículo';
+            Caption = 'Item Image', Comment = 'ESP="Imagen del artículo"';
+            Tooltip = 'Specifies the item’s image.', Comment = 'ESP="Especifica la imagen del artículo"';
             DataClassification = CustomerContent;
         }
 

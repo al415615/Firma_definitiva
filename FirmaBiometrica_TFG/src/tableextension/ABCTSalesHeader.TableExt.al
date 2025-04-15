@@ -14,8 +14,8 @@ tableextension 90100 ABCTSalesHeader extends "Sales Header"
     {
         field(90101; ABCTSalesEmail; Text[100])
         {
-            Caption = 'Sales Email', Comment = 'Email del cliente';
-            Tooltip = 'Specifies the sales contact email address.', Comment = 'Especifica el email de contacto del cliente';
+            Caption = 'Sales Email', Comment = 'ESP="Email del cliente"';
+            Tooltip = 'Specifies the sales contact email address.', Comment = 'ESP="Especifica el email de contacto del cliente"';
             ExtendedDatatype = Email;
             DataClassification = CustomerContent;
         }
@@ -23,16 +23,16 @@ tableextension 90100 ABCTSalesHeader extends "Sales Header"
 
         field(90102; ABCTSalesSignature; BLOB)
         {
-            Caption = 'Customer Signature', Comment = 'Firma del cliente';
-            Tooltip = 'Specifies the customer’s signature as an image.', Comment = 'Especifica la firma del cliente';
+            Caption = 'Customer Signature', Comment = 'ESP="Firma del cliente"';
+            Tooltip = 'Specifies the customer’s signature as an image.', Comment = 'ESP="Especifica la firma del cliente"';
             SubType = Bitmap;
             DataClassification = CustomerContent;
 
         }
         field(90104; ABCTCustomerImage; Media)
         {
-            Caption = 'Customer Image', Comment = 'Foto de perfil del cliente';
-            Tooltip = 'Specifies the customer’s image.', Comment = 'Especifica la foto de perfil del cliente';
+            Caption = 'Customer Image', Comment = 'ESP="Foto de perfil del cliente"';
+            Tooltip = 'Specifies the customer’s image.', Comment = 'ESP="Especifica la foto de perfil del cliente"';
             DataClassification = CustomerContent;
         }
 

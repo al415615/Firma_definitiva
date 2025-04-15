@@ -20,6 +20,8 @@ codeunit 90120 ABCTMyTestCodeunit
 
     begin
         // [Given] Setup
+
+        // creating the instances needed for an Offer
         if not PaymentTerms.Get('C') then begin
             PaymentTerms.Init();
             PaymentTerms.Code := 'C';
@@ -48,6 +50,7 @@ codeunit 90120 ABCTMyTestCodeunit
             GenBusPostingGroup.Insert(true);
         end;
 
+        // creating a customer for testing
         CustomerNo := 'TestCust01';
 
 
@@ -64,6 +67,7 @@ codeunit 90120 ABCTMyTestCodeunit
         Customer."Gen. Bus. Posting Group" := 'NAC';
         Customer.Insert(true);
 
+        // creating an offer
         SalesHeader.Init();
         SalesHeader."Document Type" := SalesHeader."Document Type"::Quote;
         SalesHeader."No." := 'PRUEBA1';
@@ -71,12 +75,13 @@ codeunit 90120 ABCTMyTestCodeunit
         SalesHeader.ABCTSalesEmail := 'al415615@uji.es';
         SalesHeader.Insert();
 
+        // we get the "signature" from an image already on BC
         MediaRecord.FindFirst();
         MediaRecord.CalcFields(Content);
 
         // [When] Save on the BLOB field of the offer
-        SalesHeader.ABCTSalesSignature := MediaRecord.Content;
 
+        SalesHeader.ABCTSalesSignature := MediaRecord.Content;
         SalesHeader.Modify(true);
 
         // [Then] Verify that the BLOB field is not empty on the Order!
